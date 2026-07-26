@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #f3f3f3;
+  --text-main: #111111;
+  --lime: #7cff00;
+  --lime-glow: rgba(124, 255, 0, 0.4);
+  --dark-pill: #181818;
+  --grid-line: rgba(0, 0, 0, 0.07);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background Grid Mesh */
+.bg-grid-pattern {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+}
+
+/* Marquee continuous scroll */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Animated Arrow Streams (Directional Wave) */
+@keyframes arrowWave {
+  0%, 100% {
+    opacity: 0.15;
+    color: #a1a1aa;
+  }
+  40% {
+    opacity: 1;
+    color: #09090b;
+  }
+}
+
+.arrow-pulse-1 { animation: arrowWave 1.4s ease-in-out infinite 0s; }
+.arrow-pulse-2 { animation: arrowWave 1.4s ease-in-out infinite 0.15s; }
+.arrow-pulse-3 { animation: arrowWave 1.4s ease-in-out infinite 0.3s; }
+.arrow-pulse-4 { animation: arrowWave 1.4s ease-in-out infinite 0.45s; }
+.arrow-pulse-5 { animation: arrowWave 1.4s ease-in-out infinite 0.6s; }
+
+/* Custom Glass & Shadows */
+.technochy-pill-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+}
+
+.lime-glow-hover:hover {
+  box-shadow: 0 0 20px var(--lime-glow);
+}
+
+/* Custom Neon Green Scrollbar */
+html {
+  scrollbar-color: #7cff00 #111111;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7cff00;
+  border-radius: 5px;
+  border: 2px solid #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #90ff1a;
+}
