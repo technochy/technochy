@@ -8,7 +8,10 @@ import AboutSection from '@/components/AboutSection';
 import ServicesGrid from '@/components/ServicesGrid';
 import VisionSection from '@/components/VisionSection';
 import WorkShowcase from '@/components/WorkShowcase';
+import ClientShowcaseSlider from '@/components/ClientShowcaseSlider';
+import TeamSection from '@/components/TeamSection';
 import TestimonialsProcess from '@/components/TestimonialsProcess';
+import FaqSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
@@ -19,7 +22,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f3f3f3] text-[#111111] antialiased selection:bg-[#7cff00] selection:text-black">
+    <main className="min-h-screen bg-[#f3f3f3] text-[#111111] antialiased selection:bg-[#0088ff] selection:text-white">
       <Preloader />
       <div className="sticky top-0 z-40">
         <TopAnnouncement />
@@ -31,7 +34,10 @@ export default function Home() {
       <ServicesGrid />
       <VisionSection />
       <WorkShowcase />
+      <ClientShowcaseSlider />
+      <TeamSection />
       <TestimonialsProcess />
+      <FaqSection />
       <ContactSection />
       <Footer />
     </main>

@@ -19,7 +19,7 @@ export default function Preloader() {
       // Cubic ease-out
       const easedProgress = 1 - Math.pow(1 - progress, 3);
       const currentCount = Math.floor(easedProgress * 100);
-      
+
       setCount(currentCount);
 
       if (progress >= 1) {
@@ -62,17 +62,15 @@ export default function Preloader() {
                   delay: i * 0.08 + 1.25,
                 }}
                 style={{ transformOrigin: i % 2 === 0 ? 'top' : 'bottom' }}
-                className={`flex-1 h-full ${
-                  i % 2 === 0 ? 'bg-[#0a0a0a]' : 'bg-[#121212]'
-                } border-r border-white/5 relative group`}
+                className={`flex-1 h-full ${i % 2 === 0 ? 'bg-[#0a0a0a]' : 'bg-[#121212]'
+                  } border-r border-white/5 relative group`}
               >
-                {/* Neon Green Edge Line Wiping Away */}
+                {/* Brand Blue Edge Line Wiping Away */}
                 <motion.div
                   exit={{ opacity: [1, 0] }}
                   transition={{ duration: 0.2 }}
-                  className={`absolute left-0 right-0 h-1 bg-[#7cff00] shadow-[0_0_15px_#7cff00] ${
-                    i % 2 === 0 ? 'bottom-0' : 'top-0'
-                  }`}
+                  className={`absolute left-0 right-0 h-1 bg-[#0088ff] shadow-[0_0_15px_#0088ff] ${i % 2 === 0 ? 'bottom-0' : 'top-0'
+                    }`}
                 />
               </motion.div>
             ))}
@@ -83,7 +81,7 @@ export default function Preloader() {
 
           {/* Corner Crosshair Dot Markers */}
           <div className="absolute top-8 left-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
-            <span className="w-2 h-2 bg-[#7cff00] rounded-full animate-ping"></span>
+            <span className="w-2 h-2 bg-[#0088ff] rounded-full animate-ping"></span>
             <span>// SYS.INIT_v2.4</span>
           </div>
           <div className="absolute top-8 right-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
@@ -93,7 +91,7 @@ export default function Preloader() {
           <div className="absolute bottom-8 left-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
             <span>LOC: 0x7F9A</span>
           </div>
-          <div className="absolute bottom-8 right-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] font-bold text-[#7cff00] tracking-widest">
+          <div className="absolute bottom-8 right-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] font-bold text-[#0088ff] tracking-widest">
             <span>TECHNOCHY STUDIO</span>
           </div>
 
@@ -111,9 +109,9 @@ export default function Preloader() {
               className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-2 rounded-full backdrop-blur-md mb-8 shadow-2xl"
             >
               <div className="flex gap-1">
-                <span className="w-1.5 h-1.5 bg-[#7cff00] rounded-full animate-pulse"></span>
-                <span className="w-1.5 h-1.5 bg-[#7cff00] rounded-full animate-pulse delay-100"></span>
-                <span className="w-1.5 h-1.5 bg-[#7cff00] rounded-full animate-pulse delay-200"></span>
+                <span className="w-1.5 h-1.5 bg-[#0088ff] rounded-full animate-pulse"></span>
+                <span className="w-1.5 h-1.5 bg-[#0088ff] rounded-full animate-pulse delay-100"></span>
+                <span className="w-1.5 h-1.5 bg-[#0088ff] rounded-full animate-pulse delay-200"></span>
               </div>
               <span className="font-mono text-xs font-bold text-gray-300 tracking-widest uppercase">
                 ENGINEERING THE FUTURE
@@ -147,7 +145,7 @@ export default function Preloader() {
               className="mt-8 flex flex-col items-center gap-3"
             >
               {/* Huge Monospace Percentage Digits */}
-              <div className="font-mono text-3xl sm:text-5xl font-extrabold text-[#7cff00] tracking-wider drop-shadow-[0_0_15px_rgba(124,255,0,0.4)]">
+              <div className="font-mono text-3xl sm:text-5xl font-extrabold text-[#0088ff] tracking-wider drop-shadow-[0_0_15px_rgba(0,136,255,0.4)]">
                 {String(count).padStart(2, '0')}%
               </div>
 
@@ -155,7 +153,7 @@ export default function Preloader() {
               <div className="w-56 sm:w-80 h-1.5 bg-gray-900 rounded-full overflow-hidden p-0.5 border border-white/10 relative shadow-inner">
                 <motion.div
                   style={{ width: `${count}%` }}
-                  className="h-full bg-gradient-to-r from-[#7cff00] via-lime-400 to-[#7cff00] rounded-full shadow-[0_0_16px_#7cff00]"
+                  className="h-full bg-gradient-to-r from-[#0088ff] via-[#00a3ff] to-[#0077ff] rounded-full shadow-[0_0_16px_#0088ff]"
                 />
               </div>
 

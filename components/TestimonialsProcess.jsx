@@ -84,7 +84,7 @@ export default function TestimonialsProcess() {
 
           <div>
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="w-3 h-3 bg-[#7cff00]"></div>
+              <div className="w-3 h-3 bg-[#0088ff]"></div>
               <span className="font-mono text-xs font-bold tracking-widest text-gray-700 uppercase">
                 OUR METHODOLOGY
               </span>
@@ -122,20 +122,20 @@ export default function TestimonialsProcess() {
                     : 'bg-white text-[#111111] hover:border-gray-500 z-10'
                 }`}
               >
-                {/* Top Neon Accent Sweep Line */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-[#7cff00] shadow-[0_0_12px_#7cff00] transition-transform duration-500 origin-left ${
+                {/* Top Brand Blue Accent Sweep Line */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-[#0088ff] shadow-[0_0_12px_#0088ff] transition-transform duration-500 origin-left ${
                   isActive ? 'scale-x-100' : 'scale-x-0'
                 }`} />
 
                 <div>
                   <div className="flex items-center justify-between mb-8">
                     <span className={`font-mono text-3xl font-extrabold transition-colors duration-300 ${
-                      isActive ? 'text-[#7cff00] drop-shadow-[0_0_10px_rgba(124,255,0,0.5)]' : 'text-gray-400'
+                      isActive ? 'text-[#0088ff] drop-shadow-[0_0_10px_rgba(0,136,255,0.5)]' : 'text-gray-400'
                     }`}>
                       {st.num}
                     </span>
                     <div className={`w-2.5 h-2.5 rounded-sm transition-all duration-300 ${
-                      isActive ? 'bg-[#7cff00] shadow-[0_0_8px_#7cff00] animate-pulse' : 'bg-gray-300'
+                      isActive ? 'bg-[#0088ff] shadow-[0_0_8px_#0088ff] animate-pulse' : 'bg-gray-300'
                     }`}></div>
                   </div>
 
@@ -164,11 +164,11 @@ export default function TestimonialsProcess() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="bg-[#141414] text-white p-8 sm:p-14 border border-gray-800 rounded-none relative shadow-2xl overflow-hidden"
         >
-          {/* Four Neon Square Corner Markers */}
-          <div className="absolute -top-1.5 -left-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
-          <div className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
-          <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
-          <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
+          {/* Four Brand Blue Square Corner Markers */}
+          <div className="absolute -top-1.5 -left-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
+          <div className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
+          <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
+          <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
 
           {/* Background Decorative Quote Mark */}
           <Quote size={180} className="absolute -bottom-10 -right-10 text-white/5 pointer-events-none" />
@@ -184,10 +184,10 @@ export default function TestimonialsProcess() {
               className="flex flex-col md:flex-row items-center justify-between gap-10 relative z-10"
             >
               <div className="space-y-6 max-w-3xl">
-                {/* 5 Neon Green Stars */}
-                <div className="flex items-center gap-1.5 text-[#7cff00]">
+                {/* 5 Brand Blue Stars */}
+                <div className="flex items-center gap-1.5 text-[#0088ff]">
                   {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} size={18} fill="#7cff00" className="drop-shadow-[0_0_8px_#7cff00]" />
+                    <Star key={i} size={18} fill="#0088ff" className="drop-shadow-[0_0_8px_#0088ff]" />
                   ))}
                 </div>
 
@@ -199,7 +199,7 @@ export default function TestimonialsProcess() {
                   <div className="font-mono text-sm font-extrabold text-white uppercase tracking-wider">
                     {testimonials[currentTestimonial].author}
                   </div>
-                  <div className="font-mono text-xs text-[#7cff00] font-bold mt-0.5">
+                  <div className="font-mono text-xs text-[#0088ff] font-bold mt-0.5">
                     {testimonials[currentTestimonial].role}
                   </div>
                 </div>
@@ -207,7 +207,7 @@ export default function TestimonialsProcess() {
 
               {/* Client Avatar with Glowing Ring */}
               <div className="flex flex-col items-center gap-6">
-                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-[#7cff00] p-1.5 shadow-[0_0_25px_rgba(124,255,0,0.4)] flex-shrink-0">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-[#0088ff] p-1.5 shadow-[0_0_25px_rgba(0,136,255,0.4)] flex-shrink-0">
                   <img
                     src={testimonials[currentTestimonial].avatar}
                     alt={testimonials[currentTestimonial].author}
@@ -219,7 +219,7 @@ export default function TestimonialsProcess() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={handlePrevTestimonial}
-                    className="w-10 h-10 bg-[#222222] hover:bg-[#7cff00] hover:text-black text-white rounded-full flex items-center justify-center border border-gray-700 transition-colors"
+                    className="w-10 h-10 bg-[#222222] hover:bg-[#0088ff] hover:text-white text-white rounded-full flex items-center justify-center border border-gray-700 transition-colors"
                   >
                     <ChevronLeft size={18} />
                   </button>
@@ -230,7 +230,7 @@ export default function TestimonialsProcess() {
                         key={dotIdx}
                         onClick={() => setCurrentTestimonial(dotIdx)}
                         className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                          currentTestimonial === dotIdx ? 'w-6 bg-[#7cff00] shadow-[0_0_8px_#7cff00]' : 'bg-gray-700'
+                          currentTestimonial === dotIdx ? 'w-6 bg-[#0088ff] shadow-[0_0_8px_#0088ff]' : 'bg-gray-700'
                         }`}
                       />
                     ))}
@@ -238,7 +238,7 @@ export default function TestimonialsProcess() {
 
                   <button
                     onClick={handleNextTestimonial}
-                    className="w-10 h-10 bg-[#222222] hover:bg-[#7cff00] hover:text-black text-white rounded-full flex items-center justify-center border border-gray-700 transition-colors"
+                    className="w-10 h-10 bg-[#222222] hover:bg-[#0088ff] hover:text-white text-white rounded-full flex items-center justify-center border border-gray-700 transition-colors"
                   >
                     <ChevronRight size={18} />
                   </button>

@@ -3,8 +3,8 @@
 :root {
   --bg-main: #f3f3f3;
   --text-main: #111111;
-  --lime: #7cff00;
-  --lime-glow: rgba(124, 255, 0, 0.4);
+  --lime: #0088ff;
+  --lime-glow: rgba(0, 136, 255, 0.4);
   --dark-pill: #181818;
   --grid-line: rgba(0, 0, 0, 0.07);
 }
@@ -69,9 +69,9 @@ body {
   box-shadow: 0 0 20px var(--lime-glow);
 }
 
-/* Custom Neon Green Scrollbar */
+/* Custom Brand Blue Scrollbar */
 html {
-  scrollbar-color: #7cff00 #111111;
+  scrollbar-color: #0088ff #111111;
   scrollbar-width: thin;
 }
 
@@ -84,11 +84,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7cff00;
+  background: #0088ff;
   border-radius: 5px;
   border: 2px solid #111111;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #90ff1a;
+  background: #0077ff;
 }

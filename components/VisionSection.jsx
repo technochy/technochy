@@ -9,7 +9,7 @@ export default function VisionSection() {
         
         {/* Tag */}
         <div className="inline-flex items-center gap-2 mb-8">
-          <div className="w-3 h-3 bg-[#7cff00]"></div>
+          <div className="w-3 h-3 bg-[#0088ff]"></div>
           <span className="font-mono text-xs font-bold tracking-widest text-gray-700 uppercase">
             OUR VISION
           </span>
@@ -30,16 +30,16 @@ export default function VisionSection() {
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="inline-flex items-center justify-between w-28 sm:w-36 h-14 sm:h-18 bg-[#181818] border-2 border-gray-800 rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-500 relative"
             >
-              {/* Green Glow Screen Accent */}
-              <div className="w-full h-full bg-[#7cff00] p-2 flex flex-col justify-between relative group-hover:bg-[#90ff1a] transition-colors duration-300">
+              {/* Brand Blue Glow Screen Accent */}
+              <div className="w-full h-full bg-[#0088ff] p-2 flex flex-col justify-between relative group-hover:bg-[#0077ff] transition-colors duration-300">
                 <div className="flex items-center justify-between">
-                  <span className="text-[9px] font-mono font-extrabold text-black uppercase tracking-wider">NOVA PAY</span>
-                  <div className="w-1.5 h-1.5 rounded-full bg-black animate-ping"></div>
+                  <span className="text-[9px] font-mono font-extrabold text-white uppercase tracking-wider">NOVA PAY</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-white animate-ping"></div>
                 </div>
-                <div className="text-center font-mono font-black text-black text-xs sm:text-sm tracking-tighter">
+                <div className="text-center font-mono font-black text-white text-xs sm:text-sm tracking-tighter">
                   3D ENGINE
                 </div>
-                <div className="text-[8px] font-mono font-bold text-black/70 flex justify-between">
+                <div className="text-[8px] font-mono font-bold text-white/80 flex justify-between">
                   <span>SCALE</span>
                   <span>99.9%</span>
                 </div>

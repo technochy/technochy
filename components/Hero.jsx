@@ -8,41 +8,41 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative">
         
-        {/* Top-Left 8-Bit Pixel Mosaic Corner Block (Visible on Mobile & Desktop) */}
-        <div className="absolute top-0 left-2 sm:left-8 z-20 pointer-events-none block">
+        {/* Top-Left 8-Bit Pixel Mosaic Corner Block (Blue ↔ White Hover Toggle) */}
+        <div className="absolute top-0 left-2 sm:left-8 z-20 block">
           <div className="flex">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white/80 border border-black/5"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white border border-black/5 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
           </div>
           <div className="flex">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
           <div className="flex">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
         </div>
 
-        {/* Bottom-Right 8-Bit Pixel Mosaic Corner Block (Desktop Only to prevent mobile button overlap) */}
-        <div className="absolute bottom-0 right-2 sm:right-8 z-0 pointer-events-none hidden sm:block">
+        {/* Bottom-Right 8-Bit Pixel Mosaic Corner Block (Blue ↔ White Hover Toggle) */}
+        <div className="absolute bottom-0 right-2 sm:right-8 z-20 hidden sm:block">
           <div className="flex justify-end">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
           <div className="flex justify-end">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
           <div className="flex justify-end">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white/80 border border-black/5"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white border border-black/5 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
           <div className="flex justify-end">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#7cff00] border border-black/10"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-md cursor-pointer"></div>
           </div>
         </div>
 
@@ -82,22 +82,22 @@ export default function Hero() {
               </h1>
             </div>
 
-            {/* 3D Graphic Circle Frame */}
+            {/* 3D Graphic Circle Frame featuring Animated Interactive 3D Hemisphere Badge */}
             <div className="w-full lg:w-auto py-8 lg:py-0 flex justify-center items-center">
-              <div className="relative w-36 h-36 sm:w-48 sm:h-48 rounded-[36px] bg-white border border-gray-300/80 shadow-2xl flex items-center justify-center p-4 backdrop-blur-md group hover:scale-105 transition-transform duration-500 flex-shrink-0">
+              <div className="relative w-36 h-36 sm:w-48 sm:h-48 rounded-[36px] bg-white border border-gray-300/80 shadow-2xl hover:shadow-[0_0_40px_rgba(0,136,255,0.5)] hover:border-[#0088ff] flex items-center justify-center p-4 backdrop-blur-md group hover:scale-110 transition-all duration-500 flex-shrink-0 cursor-pointer">
                 <div className="relative w-full h-full rounded-full bg-gradient-to-br from-gray-100 via-white to-gray-200 border border-gray-200 flex items-center justify-center shadow-inner overflow-hidden">
                   {/* 3D Semi-Spherical Crescent Discs */}
-                  <div className="flex items-center gap-1.5 transform group-hover:rotate-6 transition-transform duration-500">
-                    <div className="w-9 h-20 sm:w-11 sm:h-24 bg-[#181818] rounded-l-full shadow-2xl"></div>
-                    <div className="w-12 h-24 sm:w-14 sm:h-28 bg-gradient-to-r from-[#181818] via-gray-900 to-black rounded-r-full shadow-2xl"></div>
+                  <div className="flex items-center gap-1.5 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500">
+                    <div className="w-9 h-20 sm:w-11 sm:h-24 bg-gradient-to-br from-[#00a3ff] via-[#0088ff] to-[#0055cc] group-hover:from-[#00e5ff] group-hover:via-[#0088ff] group-hover:to-[#7000ff] rounded-l-full shadow-[0_0_25px_rgba(0,136,255,0.6)] group-hover:shadow-[0_0_35px_rgba(0,229,255,0.8)] transition-all duration-500"></div>
+                    <div className="w-12 h-24 sm:w-14 sm:h-28 bg-gradient-to-r from-[#181818] via-gray-900 to-black group-hover:from-[#0a1128] group-hover:via-[#001f54] group-hover:to-[#0088ff] rounded-r-full shadow-2xl transition-all duration-500"></div>
                   </div>
                 </div>
 
                 {/* Four Frame Dot Markers */}
-                <div className="absolute -top-1 -left-1 w-2 h-2 bg-black"></div>
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-black"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-black"></div>
-                <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-black"></div>
+                <div className="absolute -top-1 -left-1 w-2 h-2 bg-black group-hover:bg-[#0088ff] transition-colors"></div>
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-black group-hover:bg-[#0088ff] transition-colors"></div>
+                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-black group-hover:bg-[#0088ff] transition-colors"></div>
+                <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-black group-hover:bg-[#0088ff] transition-colors"></div>
               </div>
             </div>
 
@@ -149,12 +149,12 @@ export default function Hero() {
             View Pricing Plans
           </a>
 
-          {/* Explore Software button with Neon Green Icon Block */}
+          {/* Explore Software button with Brand Blue Icon Block */}
           <a
             href="#services"
             className="w-full sm:w-auto group flex items-center justify-center bg-[#181818] text-white rounded-xl p-1.5 pr-8 hover:bg-black transition-all duration-300 shadow-xl border border-black h-12"
           >
-            <div className="w-9 h-9 bg-[#7cff00] text-black rounded-lg flex items-center justify-center font-mono font-extrabold mr-3.5 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+            <div className="w-9 h-9 bg-[#0088ff] text-white rounded-lg flex items-center justify-center font-mono font-extrabold mr-3.5 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
               <span className="text-xs">:::▶</span>
             </div>
             <span className="font-mono text-sm font-bold tracking-wider whitespace-nowrap">Explore Software</span>

@@ -33,7 +33,7 @@ export default function AboutSection() {
       decimals: 0,
       label: 'Average ROI boost from software & affiliate automation',
       icon: (
-        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#7cff00] font-mono text-xs font-bold shadow-md flex-shrink-0">
+        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#0088ff] font-mono text-xs font-bold shadow-md flex-shrink-0">
           :::
         </div>
       ),
@@ -44,7 +44,7 @@ export default function AboutSection() {
       decimals: 0,
       label: 'Software tools & affiliate platforms deployed',
       icon: (
-        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#7cff00] font-mono text-xs font-bold shadow-md flex-shrink-0">
+        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#0088ff] font-mono text-xs font-bold shadow-md flex-shrink-0">
           <Check size={16} />
         </div>
       ),
@@ -55,7 +55,7 @@ export default function AboutSection() {
       decimals: 1,
       label: 'Client rating across 100+ global tech deployments',
       icon: (
-        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#7cff00] font-mono text-xs font-bold shadow-md flex-shrink-0">
+        <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#0088ff] font-mono text-xs font-bold shadow-md flex-shrink-0">
           <RotateCw size={14} />
         </div>
       ),
@@ -82,7 +82,7 @@ export default function AboutSection() {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-2 mb-4"
           >
-            <div className="w-3 h-3 bg-[#7cff00]"></div>
+            <div className="w-3 h-3 bg-[#0088ff]"></div>
             <span className="font-mono text-xs font-bold tracking-widest text-gray-700 uppercase">
               ABOUT US
             </span>
@@ -163,19 +163,19 @@ export default function AboutSection() {
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-            {/* Bottom Right Pixel Mosaic Art */}
-            <div className="absolute bottom-0 right-0 pointer-events-none flex flex-col items-end">
+            {/* Bottom Right Pixel Mosaic Art (White ↔ Blue Hover Toggle) */}
+            <div className="absolute bottom-0 right-0 z-20 flex flex-col items-end">
               <div className="flex">
-                <div className="w-10 h-10 bg-white"></div>
+                <div className="w-10 h-10 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 cursor-pointer"></div>
               </div>
               <div className="flex">
-                <div className="w-10 h-10 bg-white"></div>
-                <div className="w-10 h-10 bg-[#181818]"></div>
+                <div className="w-10 h-10 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 cursor-pointer"></div>
+                <div className="w-10 h-10 bg-[#181818] border border-gray-800 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 cursor-pointer"></div>
               </div>
               <div className="flex">
-                <div className="w-10 h-10 bg-white"></div>
-                <div className="w-10 h-10 bg-white"></div>
-                <div className="w-10 h-10 bg-[#7cff00]"></div>
+                <div className="w-10 h-10 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 cursor-pointer"></div>
+                <div className="w-10 h-10 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 cursor-pointer"></div>
+                <div className="w-10 h-10 bg-[#0088ff] border border-black/10 transition-all duration-300 hover:bg-white hover:scale-105 cursor-pointer"></div>
               </div>
             </div>
 

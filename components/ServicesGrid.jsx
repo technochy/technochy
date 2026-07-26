@@ -44,7 +44,7 @@ export default function ServicesGrid() {
           {/* Integrated Top Header Row */}
           <div className="text-center py-14 sm:py-20 px-6 border-b border-gray-300">
             <div className="inline-flex items-center gap-2 mb-4">
-              <div className="w-3 h-3 bg-[#7cff00]"></div>
+              <div className="w-3 h-3 bg-[#0088ff]"></div>
               <span className="font-mono text-xs font-bold tracking-widest text-gray-700 uppercase">
                 SERVICES
               </span>
@@ -78,22 +78,22 @@ export default function ServicesGrid() {
                   }`}
                 >
                   {/* Background Radial Glow Accent on Hover */}
-                  <div className={`absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(124,255,0,0.08)_0%,_transparent_70%)] pointer-events-none transition-opacity duration-500 ease-in-out ${
+                  <div className={`absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,136,255,0.08)_0%,_transparent_70%)] pointer-events-none transition-opacity duration-500 ease-in-out ${
                     isHovered ? 'opacity-100' : 'opacity-0'
                   }`} />
 
-                  {/* Top Neon Sweep Line Accent */}
-                  <div className={`absolute top-0 left-0 right-0 h-1.5 bg-[#7cff00] shadow-[0_0_15px_#7cff00] transition-transform duration-500 ease-in-out origin-left ${
+                  {/* Top Brand Blue Sweep Line Accent */}
+                  <div className={`absolute top-0 left-0 right-0 h-1.5 bg-[#0088ff] shadow-[0_0_15px_#0088ff] transition-transform duration-500 ease-in-out origin-left ${
                     isHovered ? 'scale-x-100' : 'scale-x-0'
                   }`} />
 
                   {/* Header Tag & Title */}
                   <div className="relative z-10">
                     <div className="inline-flex items-center gap-2.5 mb-10 transform group-hover:translate-x-1 transition-transform duration-500 ease-in-out">
-                      <div className="w-2.5 h-2.5 bg-[#7cff00] flex-shrink-0 animate-pulse shadow-[0_0_8px_#7cff00]"></div>
+                      <div className="w-2.5 h-2.5 bg-[#0088ff] flex-shrink-0 animate-pulse shadow-[0_0_8px_#0088ff]"></div>
                       <span className={`font-mono text-[11px] font-bold tracking-wider px-3 py-1 rounded-sm transition-all duration-500 ease-in-out ${
                         isHovered 
-                          ? 'bg-[#7cff00] text-black font-extrabold shadow-[0_0_20px_rgba(124,255,0,0.85)] scale-105' 
+                          ? 'bg-[#0088ff] text-white font-extrabold shadow-[0_0_20px_rgba(0,136,255,0.85)] scale-105' 
                           : 'bg-black text-white'
                       }`}>
                         {service.title}
@@ -103,7 +103,7 @@ export default function ServicesGrid() {
                     {/* Giant Translucent Floating Number */}
                     <div className={`text-8xl lg:text-[115px] font-extrabold font-mono tracking-tighter my-8 transition-all duration-500 ease-in-out leading-none ${
                       isHovered 
-                        ? 'text-zinc-600 -translate-y-2.5 scale-105 drop-shadow-[0_0_18px_rgba(124,255,0,0.18)]' 
+                        ? 'text-zinc-600 -translate-y-2.5 scale-105 drop-shadow-[0_0_18px_rgba(0,136,255,0.18)]' 
                         : 'text-gray-200'
                     }`}>
                       {service.id}
@@ -121,7 +121,7 @@ export default function ServicesGrid() {
                         style={{ transitionDelay: isHovered ? `${i * 0.05}s` : '0s' }}
                       >
                         <div className={`w-1.5 h-3.5 rounded-sm transition-all duration-400 ease-in-out ${
-                          isHovered ? 'bg-[#7cff00] shadow-[0_0_10px_#7cff00] scale-y-120' : 'bg-gray-400'
+                          isHovered ? 'bg-[#0088ff] shadow-[0_0_10px_#0088ff] scale-y-120' : 'bg-gray-400'
                         }`}></div>
                         <span className={`text-xs font-mono transition-all duration-400 ease-in-out ${
                           isHovered ? 'text-white font-bold tracking-wide' : 'text-gray-700 font-medium'

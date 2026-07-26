@@ -14,6 +14,10 @@ const monoFont = JetBrains_Mono({
 export const metadata = {
   title: "Technochy — AI Agency & Creative Studio",
   description: "High performance AI agency landing page with rich animations, pixel grid system, interactive services, and showcase portfolio.",
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

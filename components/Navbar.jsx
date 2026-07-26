@@ -10,8 +10,8 @@ export default function Navbar() {
     { label: 'ABOUT US', href: '#about' },
     { label: 'SERVICES', href: '#services' },
     { label: 'WORKS', href: '#works' },
-    { label: 'BLOG', href: '#blog' },
-    { label: 'CONTACT', href: '#contact' },
+    { label: 'TEAM', href: '#team' },
+    { label: 'FAQS', href: '#faq' },
   ];
 
   return (
@@ -27,17 +27,19 @@ export default function Navbar() {
           <div className="absolute bottom-0 left-0 w-2 h-2 bg-black -translate-x-1/2 translate-y-1/2 z-20"></div>
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-black translate-x-1/2 translate-y-1/2 z-20"></div>
 
-          {/* Left Cell: Logo */}
-          <div className="px-6 sm:px-8 h-full flex items-center border-r border-gray-300">
-            <a href="#home" className="flex items-center gap-1.5 group">
-              <span className="font-extrabold text-2xl tracking-tighter text-[#111111] font-mono">
-                Technochy
+          {/* Left Cell: High-Impact Stylized Text Logo */}
+          <div className="px-4 sm:px-8 h-full flex items-center border-r border-gray-300">
+            <a href="#home" className="flex items-center group">
+              <span className="font-extrabold text-2xl sm:text-[32px] tracking-tighter uppercase font-sans flex items-center gap-0.5 whitespace-nowrap">
+                <span className="text-[#111111] group-hover:text-black transition-colors">TECHNO</span>
+                <span className="text-[#0088ff] group-hover:text-[#0066ee] transition-colors">CHY</span>
+                <span className="w-2 h-2 bg-[#0088ff] rounded-sm inline-block ml-1 shadow-[0_0_8px_rgba(0,136,255,0.6)]"></span>
               </span>
             </a>
           </div>
 
           {/* Center Cell: Desktop Nav Links */}
-          <nav className="hidden md:flex items-center justify-center gap-7 lg:gap-9 px-8 h-full flex-1">
+          <nav className="hidden md:flex items-center justify-center gap-6 lg:gap-8 px-6 sm:px-8 h-full flex-1">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -92,7 +94,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block hover:text-[#7cff00] transition-colors py-1"
+              className="block hover:text-[#0088ff] transition-colors py-1"
             >
               {link.label}
             </a>
@@ -100,7 +102,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="block text-center bg-[#7cff00] text-black font-bold py-3 rounded-xl mt-4"
+            className="block text-center bg-[#0088ff] text-white font-bold py-3 rounded-xl mt-4 hover:bg-[#0077ff] transition-colors shadow-lg"
           >
             Start a Project
           </a>

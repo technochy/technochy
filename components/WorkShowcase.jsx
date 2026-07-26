@@ -10,8 +10,8 @@ export default function WorkShowcase() {
       subtitle: 'We streamlined user flows, refreshed the visual language, and introduced accessibility-focused design components to improve usability.',
       appName: 'NOVA PAY',
       tagline: 'Finance Solution for Youngs',
-      color: '#7cff00',
-      textColor: '#111111',
+      color: '#0088ff',
+      textColor: '#ffffff',
       stats: [
         { value: '40%', label: 'Faster completion' },
         { value: '+25%', label: 'Higher conversion' },
@@ -24,7 +24,7 @@ export default function WorkShowcase() {
       appName: 'AURA STUDIO',
       tagline: 'Generative AI Suite',
       color: '#181818',
-      textColor: '#7cff00',
+      textColor: '#0088ff',
       stats: [
         { value: '3x', label: 'Workflow speedup' },
         { value: '99.9%', label: 'Uptime reliability' },
@@ -84,30 +84,30 @@ export default function WorkShowcase() {
           {/* Main Showcase Grid Box */}
           <div className="relative border border-gray-300 bg-[#c8c8c9] min-h-[580px] sm:min-h-[620px] rounded-none overflow-hidden flex flex-col justify-between p-6 sm:p-10 shadow-xl">
             
-            {/* Corner Pixel Mosaic Decorative Blocks (Top Left & Top Right in White) */}
-            <div className="absolute top-0 left-0 pointer-events-none z-20">
+            {/* Corner Pixel Mosaic Decorative Blocks (White ↔ Blue Hover Toggle) */}
+            <div className="absolute top-0 left-0 z-20">
               <div className="flex">
-                <div className="w-8 h-8 bg-white"></div>
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
               </div>
               <div className="flex">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
               </div>
             </div>
 
-            <div className="absolute top-0 right-0 pointer-events-none z-20">
+            <div className="absolute top-0 right-0 z-20">
               <div className="flex justify-end">
-                <div className="w-8 h-8 bg-white"></div>
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
               </div>
               <div className="flex justify-end">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="w-8 h-8 bg-white border border-gray-100 transition-all duration-300 hover:bg-[#0088ff] hover:scale-105 hover:shadow-[0_0_15px_rgba(0,136,255,0.5)] cursor-pointer"></div>
               </div>
             </div>
 
             {/* Scroll Indicator Badge (Top Center) */}
-            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 hidden sm:flex items-center gap-2 bg-black/80 backdrop-blur-md text-[#7cff00] font-mono text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-gray-700">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#7cff00] animate-ping"></span>
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 hidden sm:flex items-center gap-2 bg-black/80 backdrop-blur-md text-[#0088ff] font-mono text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-gray-700">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0088ff] animate-ping"></span>
               <span>SCROLL TO EXPLORE ({currentIndex + 1} / 3)</span>
             </div>
 
@@ -146,7 +146,7 @@ export default function WorkShowcase() {
                       <p className="text-xs font-mono font-bold opacity-90">
                         {currentProject.tagline}
                       </p>
-                      <div className="inline-flex items-center gap-2 bg-black text-white text-xs font-mono font-bold px-4 py-2 rounded-full shadow-lg group-hover:bg-[#7cff00] group-hover:text-black transition-colors duration-300">
+                      <div className="inline-flex items-center gap-2 bg-black text-white text-xs font-mono font-bold px-4 py-2 rounded-full shadow-lg group-hover:bg-[#0088ff] group-hover:text-white transition-colors duration-300">
                         <span>Get Started</span>
                         <span>›</span>
                       </div>
@@ -186,13 +186,13 @@ export default function WorkShowcase() {
               <div className="lg:col-span-4 flex items-center justify-end gap-1">
                 <button
                   onClick={handlePrev}
-                  className="w-12 h-12 sm:w-14 sm:h-14 bg-[#4a4a4b] text-white hover:bg-[#7cff00] hover:text-black flex items-center justify-center transition-colors border border-gray-600 shadow-lg"
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-[#4a4a4b] text-white hover:bg-[#0088ff] hover:text-white flex items-center justify-center transition-colors border border-gray-600 shadow-lg"
                 >
                   <ChevronLeft size={22} />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="w-12 h-12 sm:w-14 sm:h-14 bg-[#4a4a4b] text-white hover:bg-[#7cff00] hover:text-black flex items-center justify-center transition-colors border border-gray-600 shadow-lg"
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-[#4a4a4b] text-white hover:bg-[#0088ff] hover:text-white flex items-center justify-center transition-colors border border-gray-600 shadow-lg"
                 >
                   <ChevronRight size={22} />
                 </button>

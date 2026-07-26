@@ -66,43 +66,43 @@ export default function ContactSection() {
               YOUR PROJECT
             </h2>
 
-            {/* Centered 3D Hemisphere Media Badge */}
+            {/* Centered 3D Hemisphere Media Badge with Electric Blue Accent */}
             <div className="flex justify-center my-6 relative z-20">
               <motion.div 
                 whileHover={{ scale: 1.2, rotate: 180 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className="w-14 h-14 sm:w-20 sm:h-20 bg-white rounded-full p-2 sm:p-2.5 shadow-2xl border border-gray-300 flex items-center justify-center cursor-pointer group"
               >
-                <div className="w-full h-full bg-gradient-to-r from-gray-800 to-black rounded-full flex items-center justify-center gap-1 shadow-inner">
-                  <div className="w-2.5 sm:w-3 h-6 sm:h-8 bg-gray-400 rounded-l-full"></div>
+                <div className="w-full h-full bg-gradient-to-r from-gray-900 to-black rounded-full flex items-center justify-center gap-1 shadow-inner">
+                  <div className="w-2.5 sm:w-3 h-6 sm:h-8 bg-gradient-to-b from-[#00a3ff] via-[#0088ff] to-[#0055cc] rounded-l-full shadow-[0_0_12px_#0088ff]"></div>
                   <div className="w-3 sm:w-4 h-7 sm:h-9 bg-gray-200 rounded-r-full"></div>
                 </div>
               </motion.div>
             </div>
           </div>
 
-          {/* Integrated Stepped Neon Green Columns Canvas */}
+          {/* Integrated Stepped Brand Blue Columns Canvas */}
           <div className="relative w-full h-40 sm:h-64 flex items-end justify-between overflow-hidden -mx-3 sm:-mx-12 w-[calc(100%+1.5rem)] sm:w-[calc(100%+6rem)]">
             
             {/* Left Stepped Columns */}
             <div className="flex items-end h-full w-1/2">
-              <div className="w-1/3 h-full bg-[#7cff00] p-2 sm:p-4 flex flex-col justify-end">
+              <div className="w-1/3 h-full bg-[#0088ff] p-2 sm:p-4 flex flex-col justify-end">
                 <div className="inline-flex items-center gap-1 sm:gap-1.5 bg-black text-white px-1.5 py-0.5 sm:px-2 sm:py-1 font-mono text-[8px] sm:text-[9px] font-bold uppercase tracking-wider">
-                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-[#7cff00]"></span>
+                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-[#0088ff]"></span>
                   <span className="truncate">IMPACTFUL CREATIVE</span>
                 </div>
               </div>
-              <div className="w-1/3 h-[68%] bg-[#7cff00] border-l border-white/20"></div>
-              <div className="w-1/3 h-[38%] bg-[#7cff00] border-l border-white/20"></div>
+              <div className="w-1/3 h-[68%] bg-[#0088ff] border-l border-white/20"></div>
+              <div className="w-1/3 h-[38%] bg-[#0088ff] border-l border-white/20"></div>
             </div>
 
             {/* Right Stepped Columns */}
             <div className="flex items-end h-full w-1/2 justify-end">
-              <div className="w-1/3 h-[38%] bg-[#7cff00] border-r border-white/20"></div>
-              <div className="w-1/3 h-[68%] bg-[#7cff00] border-r border-white/20"></div>
-              <div className="w-1/3 h-full bg-[#7cff00] p-2 sm:p-4 flex flex-col justify-end items-end">
+              <div className="w-1/3 h-[38%] bg-[#0088ff] border-r border-white/20"></div>
+              <div className="w-1/3 h-[68%] bg-[#0088ff] border-r border-white/20"></div>
+              <div className="w-1/3 h-full bg-[#0088ff] p-2 sm:p-4 flex flex-col justify-end items-end">
                 <div className="inline-flex items-center gap-1 sm:gap-1.5 bg-black text-white px-1.5 py-0.5 sm:px-2 sm:py-1 font-mono text-[8px] sm:text-[9px] font-bold uppercase tracking-wider">
-                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-[#7cff00]"></span>
+                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-[#0088ff]"></span>
                   <span className="truncate">GLOBAL SUPPORT</span>
                 </div>
               </div>
@@ -115,9 +115,9 @@ export default function ContactSection() {
         {/* Bottom Dark Contact Box (Seamless Edge-to-Edge Join) */}
         <div className="relative bg-[#0c0c0e] text-white border border-t-0 border-gray-800 shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
           
-          {/* Bottom Two Neon Corner Markers */}
-          <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
-          <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#7cff00] z-30 shadow-[0_0_10px_#7cff00]"></div>
+          {/* Bottom Two Brand Blue Corner Markers */}
+          <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
+          <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#0088ff] z-30 shadow-[0_0_10px_#0088ff]"></div>
 
           {/* Left Column: Direct Contact Info & Offices */}
           <div className="lg:col-span-6 p-6 sm:p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-gray-800 flex flex-col justify-between space-y-10">
@@ -125,8 +125,8 @@ export default function ContactSection() {
             {/* Contact Details */}
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-[#181818] px-3 py-1 rounded-none border border-gray-800">
-                <span className="w-2 h-2 bg-[#7cff00]"></span>
-                <span className="font-mono text-xs font-bold tracking-widest text-[#7cff00] uppercase">
+                <span className="w-2 h-2 bg-[#0088ff]"></span>
+                <span className="font-mono text-xs font-bold tracking-widest text-[#0088ff] uppercase">
                   CONTACT
                 </span>
               </div>
@@ -134,13 +134,13 @@ export default function ContactSection() {
               <div className="space-y-2 pt-2 font-mono">
                 <a
                   href="mailto:hello@technochy.com"
-                  className="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white hover:text-[#7cff00] transition-colors tracking-tight break-all"
+                  className="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white hover:text-[#0088ff] transition-colors tracking-tight break-all"
                 >
                   hello@technochy.com
                 </a>
                 <a
                   href="tel:+11234567890"
-                  className="block text-xl sm:text-2xl lg:text-3xl font-bold text-white hover:text-[#7cff00] transition-colors"
+                  className="block text-xl sm:text-2xl lg:text-3xl font-bold text-white hover:text-[#0088ff] transition-colors"
                 >
                   (+1) 123 456-7890
                 </a>
@@ -150,7 +150,7 @@ export default function ContactSection() {
             {/* Global Offices Grid */}
             <div className="space-y-6 pt-8 border-t border-dashed border-gray-800">
               <div className="inline-flex items-center gap-2 bg-[#181818] px-3 py-1 rounded-none border border-gray-800">
-                <span className="w-2 h-2 bg-[#7cff00]"></span>
+                <span className="w-2 h-2 bg-[#0088ff]"></span>
                 <span className="font-mono text-xs font-bold tracking-widest text-white uppercase">
                   OFFICES
                 </span>
@@ -178,7 +178,7 @@ export default function ContactSection() {
             </div>
 
             <div className="pt-2 sm:pt-4 flex items-center gap-2 font-mono text-[10px] text-gray-500">
-              <Sparkles size={12} className="text-[#7cff00]" />
+              <Sparkles size={12} className="text-[#0088ff]" />
               <span>AVERAGE RESPONSE TIME: &lt; 2 HOURS</span>
             </div>
 
@@ -199,7 +199,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Enter your full name"
-                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#7cff00] transition-colors placeholder:text-gray-600 font-sans"
+                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#0088ff] transition-colors placeholder:text-gray-600 font-sans"
                 />
               </div>
 
@@ -214,7 +214,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="Enter your e-mail"
-                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#7cff00] transition-colors placeholder:text-gray-600 font-sans"
+                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#0088ff] transition-colors placeholder:text-gray-600 font-sans"
                 />
               </div>
 
@@ -229,14 +229,14 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Leave us message"
-                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#7cff00] transition-colors placeholder:text-gray-600 font-sans resize-none"
+                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm text-white focus:outline-none focus:border-[#0088ff] transition-colors placeholder:text-gray-600 font-sans resize-none"
                 />
               </div>
 
               {/* Attachment File Input */}
               <div className="pt-2">
-                <label className="inline-flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-[#7cff00] cursor-pointer transition-colors">
-                  <Paperclip size={16} className="text-[#7cff00]" />
+                <label className="inline-flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-[#0088ff] cursor-pointer transition-colors">
+                  <Paperclip size={16} className="text-[#0088ff]" />
                   <span>{fileName ? `Attached: ${fileName}` : 'Add an Attachment'}</span>
                   <input type="file" onChange={handleFileChange} className="hidden" />
                 </label>
@@ -247,7 +247,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={submitted}
-                  className="w-full py-4 bg-gradient-to-r from-gray-900 via-gray-800 to-black hover:from-[#7cff00] hover:to-[#90ff1a] text-white hover:text-black font-extrabold text-sm rounded-xl border border-gray-700 hover:border-[#7cff00] transition-all duration-500 shadow-xl flex items-center justify-center gap-3 group"
+                  className="w-full py-4 bg-gradient-to-r from-gray-900 via-gray-800 to-black hover:from-[#0088ff] hover:to-[#0077ff] text-white font-extrabold text-sm rounded-xl border border-gray-700 hover:border-[#0088ff] transition-all duration-500 shadow-xl flex items-center justify-center gap-3 group"
                 >
                   <AnimatePresence mode="wait">
                     {submitted ? (

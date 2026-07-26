@@ -9,13 +9,13 @@ export default function TopAnnouncement() {
       <div className="animate-marquee whitespace-nowrap flex items-center gap-12">
         {items.map((text, idx) => (
           <div key={idx} className="flex items-center gap-6">
-            <div className="flex items-center gap-1 text-[#7cff00] font-bold">
+            <div className="flex items-center gap-1 text-[#0088ff] font-bold">
               <span className="arrow-pulse-1">▶</span>
               <span className="arrow-pulse-2">▶</span>
               <span className="arrow-pulse-3">▶</span>
             </div>
             <span>{text}</span>
-            <div className="flex items-center gap-1 text-[#7cff00] font-bold">
+            <div className="flex items-center gap-1 text-[#0088ff] font-bold">
               <span className="arrow-pulse-3">◀</span>
               <span className="arrow-pulse-2">◀</span>
               <span className="arrow-pulse-1">◀</span>
