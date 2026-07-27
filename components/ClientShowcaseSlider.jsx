@@ -7,39 +7,48 @@ export default function ClientShowcaseSlider() {
   const slides = [
     {
       id: '01',
-      title: 'Beyond expectations',
-      quote: 'Working with Technochy completely transformed how we present our product. Their attention to detail, 3D aesthetics, and understanding of user experience helped us increase engagement by 370%.',
-      author: 'Daniel Lewis',
-      role: 'Founder, Lunaris Coffee Co.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=80',
-      badge: 'CASE STUDY // 01',
+      title: 'Enterprise Web & Mobile Scalability',
+      quote: 'Technochy engineered our cross-platform mobile app and Next.js portal from scratch. The seamless UI/UX, 60fps animations, and lightning speed doubled our user retention within 60 days.',
+      author: 'Daniel Vance',
+      role: 'CTO @ Enterprise Tech Global',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80',
+      badge: 'MOBILE & WEB APPS // 01',
     },
     {
       id: '02',
-      title: 'Game-changing architecture',
-      quote: 'The custom software infrastructure Technochy built scaled our active platform from 10K to 500K daily active users without a single millisecond of downtime. Truly world-class engineering.',
+      title: 'Intelligent AI & Workflow Automation',
+      quote: 'The custom AI models and LLM automation pipelines Technochy integrated reduced our customer query response times by 85% while scaling to 500,000 daily requests effortlessly.',
       author: 'Sophia Chen',
-      role: 'VP of Product, Omni Tech Network',
+      role: 'Head of AI @ Neural Engine Systems',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1600&q=80',
-      badge: 'SCALABILITY // 02',
+      badge: 'AI & MACHINE LEARNING // 02',
     },
     {
       id: '03',
-      title: 'Unmatched technical speed',
-      quote: 'Hands down the most talented tech agency we have partnered with. Their automated affiliate tracking matrix and Next.js frontend speed exceeded our highest expectations.',
-      author: 'Marcus Vance',
-      role: 'CTO, Aura AI Suite',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80',
-      badge: 'AUTOMATION // 03',
+      title: 'High-ROI Growth & SEO Overhaul',
+      quote: 'Their performance marketing team completely revamped our PPC campaigns and technical SEO. We achieved a 420% surge in qualified organic leads and a 3.5x return on ad spend.',
+      author: 'Alex Rivera',
+      role: 'VP of Growth @ Apex Media Group',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=80',
+      badge: 'DIGITAL GROWTH & SEO // 03',
     },
     {
       id: '04',
-      title: 'Pixel-perfect precision',
-      quote: 'From 8-bit pixel grid aesthetics to 60fps micro-animations, Technochy brought our vision to life with rare craftsmanship and strategic focus.',
+      title: 'Pixel-Perfect UI/UX & 3D Branding',
+      quote: 'Technochy brought our vision to life with breathtaking 3D aesthetics, custom design systems, and intuitive UI/UX. Their craftsmanship set a new standard in our industry.',
       author: 'Elena Rostova',
-      role: 'Head of Design, Nova Pay Global',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=80',
-      badge: 'EXPERIENCE // 04',
+      role: 'Creative Director @ Studio Craft London',
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1600&q=80',
+      badge: 'UI/UX & BRANDING // 04',
+    },
+    {
+      id: '05',
+      title: 'Global Ebook Publishing Launch',
+      quote: "From cover design and interior formatting to Amazon KDP setup and launch promotion, Technochy's publishing services propelled our title to a #1 bestseller category.",
+      author: 'Marcus Thorne',
+      role: 'Author & Publisher @ Horizon Media Works',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=80',
+      badge: 'EBOOK PUBLISHING // 05',
     },
   ];
 
@@ -172,7 +181,7 @@ export default function ClientShowcaseSlider() {
                 <img
                   src={currentSlide.image}
                   alt={currentSlide.author}
-                  className="w-full h-full object-cover filter grayscale contrast-125 brightness-75"
+                  className="w-full h-full object-cover filter contrast-105 brightness-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/80"></div>
               </motion.div>

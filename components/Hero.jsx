@@ -73,17 +73,17 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-2 sm:px-16 divide-y divide-dashed divide-gray-400/80 lg:divide-y-0"
+            className="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-2 sm:px-4 gap-2 sm:gap-3 lg:gap-4 divide-y divide-dashed divide-gray-400/80 lg:divide-y-0"
           >
             {/* WE BUILD */}
-            <div className="w-full lg:w-auto py-8 lg:py-0 flex justify-center items-center">
+            <div className="w-full lg:w-auto py-2 lg:py-0 flex justify-center items-center">
               <h1 className="text-4xl sm:text-6xl lg:text-[85px] font-extrabold tracking-tighter text-[#1b1b1b] uppercase font-sans leading-none whitespace-nowrap">
                 WE BUILD
               </h1>
             </div>
 
             {/* 3D Graphic Circle Frame featuring Animated Interactive 3D Hemisphere Badge */}
-            <div className="w-full lg:w-auto py-8 lg:py-0 flex justify-center items-center">
+            <div className="w-full lg:w-auto py-2 lg:py-0 flex justify-center items-center">
               <div className="relative w-36 h-36 sm:w-48 sm:h-48 rounded-[36px] bg-white border border-gray-300/80 shadow-2xl hover:shadow-[0_0_40px_rgba(0,136,255,0.5)] hover:border-[#0088ff] flex items-center justify-center p-4 backdrop-blur-md group hover:scale-110 transition-all duration-500 flex-shrink-0 cursor-pointer">
                 <div className="relative w-full h-full rounded-full bg-gradient-to-br from-gray-100 via-white to-gray-200 border border-gray-200 flex items-center justify-center shadow-inner overflow-hidden">
                   {/* 3D Semi-Spherical Crescent Discs */}
@@ -102,7 +102,7 @@ export default function Hero() {
             </div>
 
             {/* SOFTWARE */}
-            <div className="w-full lg:w-auto py-8 lg:py-0 flex justify-center items-center">
+            <div className="w-full lg:w-auto py-2 lg:py-0 flex justify-center items-center">
               <h1 className="text-4xl sm:text-6xl lg:text-[85px] font-extrabold tracking-tighter text-[#1b1b1b] uppercase font-sans leading-none whitespace-nowrap">
                 SOFTWARE
               </h1>
@@ -129,9 +129,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="max-w-2xl mx-auto text-center text-gray-800 text-sm sm:text-base font-medium leading-relaxed mt-8 mb-10 px-4"
+          className="max-w-3xl mx-auto text-center text-gray-800 text-sm sm:text-base font-medium leading-relaxed mt-8 mb-10 px-4"
         >
-          From custom software engineering to automated affiliate systems — we build high-impact tech that drives real revenue.
+          From web & mobile app development to AI, UI/UX design, and digital marketing — we build high-impact tech & growth solutions that drive real revenue.
         </motion.p>
 
         {/* Action Buttons (z-30 to stay cleanly above background elements) */}
@@ -141,12 +141,12 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="relative z-30 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4"
         >
-          {/* View Pricing Plans button */}
+          {/* Contact Us / Start Project button */}
           <a
-            href="#pricing"
-            className="w-full sm:w-auto bg-white text-[#111111] font-mono text-sm font-bold px-8 py-3.5 rounded-xl border border-gray-300 shadow-md hover:shadow-lg hover:border-black transition-all duration-300 flex items-center justify-center h-12"
+            href="#contact"
+            className="w-full sm:w-auto bg-[#0088ff] hover:bg-[#0077ff] text-white font-mono text-sm font-extrabold px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center h-12"
           >
-            View Pricing Plans
+            Start A Project
           </a>
 
           {/* Explore Software button with Brand Blue Icon Block */}
@@ -157,7 +157,7 @@ export default function Hero() {
             <div className="w-9 h-9 bg-[#0088ff] text-white rounded-lg flex items-center justify-center font-mono font-extrabold mr-3.5 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
               <span className="text-xs">:::▶</span>
             </div>
-            <span className="font-mono text-sm font-bold tracking-wider whitespace-nowrap">Explore Software</span>
+            <span className="font-mono text-sm font-bold tracking-wider whitespace-nowrap">Explore Services</span>
           </a>
         </motion.div>
 

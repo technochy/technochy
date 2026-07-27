@@ -35,7 +35,6 @@ export default function Home() {
       <VisionSection />
       <WorkShowcase />
       <ClientShowcaseSlider />
-      <TeamSection />
       <TestimonialsProcess />
       <FaqSection />
       <ContactSection />

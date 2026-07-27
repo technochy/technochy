@@ -1,8 +1,15 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -15,14 +22,12 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { label: 'Instagram', href: 'https://instagram.com' },
+    { label: 'Facebook', href: 'https://facebook.com' },
     { label: 'Linkedin', href: 'https://linkedin.com' },
-    { label: 'Dribbble', href: 'https://dribbble.com' },
-    { label: 'Behance', href: 'https://behance.net' },
   ];
 
   return (
-    <footer id="contact" className="w-full bg-[#f3f3f3] text-[#111111] pt-12 pb-8 border-t border-gray-300">
+    <footer className="w-full bg-[#f3f3f3] text-[#111111] pt-12 pb-8 border-t border-gray-300">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* 1. Top Navigation Links Grid Row */}
@@ -94,11 +99,11 @@ export default function Footer() {
 
         </div>
 
-        {/* 3. Bottom Credits & Social Links Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-4 font-mono text-xs text-gray-600">
+        {/* 3. Bottom Credits, Social Links & Legal Policies */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-4 border-t border-gray-200 mt-6 font-mono text-xs text-gray-600">
 
-          {/* Left: Social Media Links */}
-          <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
+          {/* Left: Social Media Links & Policy Pages */}
+          <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center md:justify-start">
             {socialLinks.map((s) => (
               <a
                 key={s.label}
@@ -110,17 +115,27 @@ export default function Footer() {
                 {s.label}
               </a>
             ))}
+            <span className="text-gray-300 hidden sm:inline">|</span>
+            <Link href="/privacy-policy" className="font-medium text-gray-600 hover:text-[#0088ff] transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/refund-policy" className="font-medium text-gray-600 hover:text-[#0088ff] transition-colors">
+              Refund Policy
+            </Link>
+            <Link href="/terms-and-conditions" className="font-medium text-gray-600 hover:text-[#0088ff] transition-colors">
+              Terms & Conditions
+            </Link>
           </div>
 
           {/* Center: Copyright Notice */}
           <div className="text-center font-sans font-medium text-gray-500 text-[11px] sm:text-xs">
-            © {new Date().getFullYear()} Technochy. All Rights Reserved
+            © {currentYear} Technochy. All Rights Reserved
           </div>
 
           {/* Right: Back to Top */}
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center gap-1.5 font-mono font-bold text-gray-800 hover:text-black transition-colors"
+            className="inline-flex items-center gap-1.5 font-mono font-bold text-gray-800 hover:text-black transition-colors cursor-pointer"
           >
             <span>Back to Top</span>
             <ChevronUp size={16} />

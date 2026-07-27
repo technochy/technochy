@@ -39,10 +39,10 @@ export default function AboutSection() {
       ),
     },
     {
-      to: 120,
+      to: 5,
       suffix: '+',
       decimals: 0,
-      label: 'Software tools & affiliate platforms deployed',
+      label: 'Years of proven industry experience in software & tech engineering',
       icon: (
         <div className="w-10 h-10 bg-[#181818] rounded-xl flex items-center justify-center text-[#0088ff] font-mono text-xs font-bold shadow-md flex-shrink-0">
           <Check size={16} />
@@ -96,7 +96,7 @@ export default function AboutSection() {
             transition={{ duration: 0.7 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#111111] max-w-5xl tracking-tight leading-tight"
           >
-            We engineer intelligent software tools & automated affiliate platforms that turn strategy into scalable revenue.
+            We engineer custom software, web & mobile apps, AI solutions & digital marketing strategies that turn vision into scalable revenue.
           </motion.h2>
         </div>
 

@@ -2,7 +2,12 @@
 import React from 'react';
 
 export default function TopAnnouncement() {
-  const items = Array(8).fill("WE ARE AVAILABLE FOR DECEMBER PROJECTS");
+  const announcements = [
+    "⚡ NOW ACCEPTING NEW PROJECTS — ELEVATE YOUR DIGITAL BRAND",
+    "🚀 TOP-TIER WEB & MOBILE DEVELOPMENT FOR HIGH-GROWTH BRANDS",
+    "💡 CRAFTING HIGH-PERFORMANCE DIGITAL PRODUCTS & AI SOLUTIONS"
+  ];
+  const items = [...announcements, ...announcements, ...announcements];
 
   return (
     <div className="w-full bg-[#111111] text-white py-2.5 overflow-hidden border-b border-gray-800 text-xs font-mono tracking-widest uppercase relative z-50">

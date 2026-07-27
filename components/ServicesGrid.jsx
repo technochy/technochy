@@ -8,23 +8,45 @@ export default function ServicesGrid() {
   const services = [
     {
       id: '01',
-      title: 'CUSTOM SOFTWARE',
-      items: ['Web & Mobile Apps', 'High-Performance APIs', 'Cloud & Database Systems', 'Scalable Architecture'],
+      title: 'SOFTWARE & DEV',
+      items: [
+        'Mobile App Development',
+        'Web Development',
+        'Software Development',
+        'Front-End Development',
+        'Back-End Development'
+      ],
     },
     {
       id: '02',
-      title: 'AFFILIATE PLATFORMS',
-      items: ['Affiliate Tracking Engines', 'Commission Payout Systems', 'Real-Time Analytics', 'Multi-Tier Network Tools'],
+      title: 'DESIGN & AI TECH',
+      items: [
+        'UI/UX Design',
+        'Graphic Designing',
+        'AI & Machine Learning',
+        'Cybersecurity'
+      ],
     },
     {
       id: '03',
-      title: 'TECH AUTOMATION',
-      items: ['Workflow Automation', 'Custom API Integrations', 'Bot & Scripting Systems', 'Data Pipeline Scaling'],
+      title: 'DIGITAL MARKETING',
+      items: [
+        'SEO',
+        'Digital Marketing',
+        'PPC Advertising',
+        'Affiliate Marketing',
+        'Social Media Marketing'
+      ],
     },
     {
       id: '04',
-      title: 'DIGITAL SOLUTIONS',
-      items: ['SaaS Product Engineering', 'Performance Tuning', 'Product UI/UX Design', '24/7 Cloud Monitoring'],
+      title: 'STRATEGY & GROWTH',
+      items: [
+        'Technology & Product Consulting',
+        'Data & Analytics',
+        'Performance Optimization',
+        'Ebook Publishing Services'
+      ],
     },
   ];
 

@@ -6,12 +6,12 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { label: 'HOME', href: '#home', active: true },
-    { label: 'ABOUT US', href: '#about' },
-    { label: 'SERVICES', href: '#services' },
-    { label: 'WORKS', href: '#works' },
-    { label: 'TEAM', href: '#team' },
-    { label: 'FAQS', href: '#faq' },
+    { label: 'HOME', href: '/#home', active: true },
+    { label: 'ABOUT US', href: '/#about' },
+    { label: 'SERVICES', href: '/#services' },
+    { label: 'WORKS', href: '/#works' },
+    { label: 'FAQS', href: '/#faq' },
+    { label: 'CONTACT', href: '/#contact' },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function Navbar() {
 
           {/* Left Cell: High-Impact Stylized Text Logo */}
           <div className="px-4 sm:px-8 h-full flex items-center border-r border-gray-300">
-            <a href="#home" className="flex items-center group">
+            <a href="/#home" className="flex items-center group">
               <span className="font-extrabold text-2xl sm:text-[32px] tracking-tighter uppercase font-sans flex items-center gap-0.5 whitespace-nowrap">
                 <span className="text-[#111111] group-hover:text-black transition-colors">TECHNO</span>
                 <span className="text-[#0088ff] group-hover:text-[#0066ee] transition-colors">CHY</span>
@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* Right Cell: Start a Project CTA Button */}
           <div className="hidden md:flex items-center px-6 sm:px-8 h-full border-l border-gray-300">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center justify-center bg-[#181818] text-white text-sm font-mono font-bold px-6 py-3 rounded-full hover:bg-black hover:scale-105 transition-all duration-200 shadow-md hover:shadow-xl"
             >
               Start a Project
@@ -100,7 +100,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="block text-center bg-[#0088ff] text-white font-bold py-3 rounded-xl mt-4 hover:bg-[#0077ff] transition-colors shadow-lg"
           >

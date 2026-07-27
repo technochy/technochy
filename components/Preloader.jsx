@@ -9,14 +9,12 @@ export default function Preloader() {
   useEffect(() => {
     document.body.style.overflow = 'hidden';
 
-    // Ticker counter from 0% to 100%
-    const duration = 1300; // ms
+    const duration = 1200; // ms
     const startTime = Date.now();
 
     const interval = setInterval(() => {
       const elapsed = Date.now() - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Cubic ease-out
       const easedProgress = 1 - Math.pow(1 - progress, 3);
       const currentCount = Math.floor(easedProgress * 100);
 
@@ -25,12 +23,12 @@ export default function Preloader() {
       if (progress >= 1) {
         clearInterval(interval);
       }
-    }, 20);
+    }, 16);
 
     const timer = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = 'auto';
-    }, 2400);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
@@ -46,10 +44,10 @@ export default function Preloader() {
       {loading && (
         <motion.div
           key="preloader"
-          exit={{ opacity: 0, transition: { duration: 0.3, delay: 1.0 } }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center select-none overflow-hidden"
+          exit={{ opacity: 0, transition: { duration: 0.4, delay: 0.9 } }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center select-none overflow-hidden bg-[#0a0a0c]"
         >
-          {/* 6 Vertical Shutter Columns with Neon Green Leading Accent Lines */}
+          {/* 6 Vertical Shutter Columns */}
           <div className="absolute inset-0 flex w-full h-full">
             {[0, 1, 2, 3, 4, 5].map((i) => (
               <motion.div
@@ -57,48 +55,43 @@ export default function Preloader() {
                 initial={{ scaleY: 1 }}
                 exit={{ scaleY: 0 }}
                 transition={{
-                  duration: 0.85,
+                  duration: 0.75,
                   ease: [0.85, 0, 0.15, 1],
-                  delay: i * 0.08 + 1.25,
+                  delay: i * 0.06 + 0.9,
                 }}
                 style={{ transformOrigin: i % 2 === 0 ? 'top' : 'bottom' }}
-                className={`flex-1 h-full ${i % 2 === 0 ? 'bg-[#0a0a0a]' : 'bg-[#121212]'
-                  } border-r border-white/5 relative group`}
-              >
-                {/* Brand Blue Edge Line Wiping Away */}
-                <motion.div
-                  exit={{ opacity: [1, 0] }}
-                  transition={{ duration: 0.2 }}
-                  className={`absolute left-0 right-0 h-1 bg-[#0088ff] shadow-[0_0_15px_#0088ff] ${i % 2 === 0 ? 'bottom-0' : 'top-0'
-                    }`}
-                />
-              </motion.div>
+                className={`flex-1 h-full ${
+                  i % 2 === 0 ? 'bg-[#0c0c0e]' : 'bg-[#121216]'
+                } border-r border-white/5 relative`}
+              />
             ))}
           </div>
 
           {/* Background Grid Pattern Overlay */}
           <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-10"></div>
 
-          {/* Corner Crosshair Dot Markers */}
-          <div className="absolute top-8 left-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
+          {/* Corner Clean Brand Indicators */}
+          <div className="absolute top-8 left-8 z-20 hidden sm:flex items-center gap-2.5 font-mono text-[11px] text-gray-400 tracking-widest uppercase">
             <span className="w-2 h-2 bg-[#0088ff] rounded-full animate-ping"></span>
-            <span>// SYS.INIT_v2.4</span>
-          </div>
-          <div className="absolute top-8 right-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
-            <span>[MODE: HIGH_PERF]</span>
-            <div className="w-2 h-2 bg-white"></div>
-          </div>
-          <div className="absolute bottom-8 left-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] text-gray-500 tracking-widest">
-            <span>LOC: 0x7F9A</span>
-          </div>
-          <div className="absolute bottom-8 right-8 z-20 hidden sm:flex items-center gap-3 font-mono text-[10px] font-bold text-[#0088ff] tracking-widest">
-            <span>TECHNOCHY STUDIO</span>
+            <span className="font-bold text-white">TECHNOCHY STUDIO</span>
           </div>
 
-          {/* Center Main Intro Content */}
+          <div className="absolute top-8 right-8 z-20 hidden sm:flex items-center gap-2 font-mono text-[11px] text-gray-400 tracking-widest uppercase">
+            <span>CREATIVE DIGITAL AGENCY</span>
+          </div>
+
+          <div className="absolute bottom-8 left-8 z-20 hidden sm:flex items-center gap-2 font-mono text-[11px] text-gray-500 tracking-widest uppercase">
+            <span>HIGH-PERFORMANCE SOLUTIONS</span>
+          </div>
+
+          <div className="absolute bottom-8 right-8 z-20 hidden sm:flex items-center gap-2 font-mono text-[11px] font-bold text-[#0088ff] tracking-widest uppercase">
+            <span>LOADING EXPERIENCE</span>
+          </div>
+
+          {/* Center Content */}
           <motion.div
-            exit={{ opacity: 0, y: -40, scale: 0.95 }}
-            transition={{ duration: 0.5, ease: 'easeIn' }}
+            exit={{ opacity: 0, y: -30, scale: 0.96 }}
+            transition={{ duration: 0.4, ease: 'easeIn' }}
             className="relative z-20 flex flex-col items-center justify-center text-center px-4"
           >
             {/* Top Status Pill */}
@@ -113,21 +106,21 @@ export default function Preloader() {
                 <span className="w-1.5 h-1.5 bg-[#0088ff] rounded-full animate-pulse delay-100"></span>
                 <span className="w-1.5 h-1.5 bg-[#0088ff] rounded-full animate-pulse delay-200"></span>
               </div>
-              <span className="font-mono text-xs font-bold text-gray-300 tracking-widest uppercase">
+              <span className="font-mono text-xs font-bold text-gray-200 tracking-widest uppercase">
                 ENGINEERING THE FUTURE
               </span>
             </motion.div>
 
-            {/* Staggered Letter Reveal Brand Title */}
+            {/* Brand Title */}
             <div className="flex items-center justify-center overflow-hidden py-2">
               {titleChars.map((char, index) => (
                 <motion.span
                   key={index}
-                  initial={{ y: '100%', opacity: 0, rotateX: -90 }}
-                  animate={{ y: '0%', opacity: 1, rotateX: 0 }}
+                  initial={{ y: '100%', opacity: 0 }}
+                  animate={{ y: '0%', opacity: 1 }}
                   transition={{
-                    duration: 0.7,
-                    delay: index * 0.05 + 0.1,
+                    duration: 0.6,
+                    delay: index * 0.04 + 0.1,
                     ease: [0.215, 0.61, 0.355, 1],
                   }}
                   className="text-5xl sm:text-7xl lg:text-9xl font-extrabold font-mono text-white uppercase inline-block tracking-tighter drop-shadow-2xl"
@@ -137,28 +130,30 @@ export default function Preloader() {
               ))}
             </div>
 
-            {/* Animated Live Ticker Counter + Progress Bar */}
+            {/* Live Ticker Counter + Smooth Glowing Progress Bar */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
               className="mt-8 flex flex-col items-center gap-3"
             >
-              {/* Huge Monospace Percentage Digits */}
-              <div className="font-mono text-3xl sm:text-5xl font-extrabold text-[#0088ff] tracking-wider drop-shadow-[0_0_15px_rgba(0,136,255,0.4)]">
+              {/* Percentage */}
+              <div className="font-mono text-3xl sm:text-5xl font-extrabold text-[#0088ff] tracking-wider drop-shadow-[0_0_20px_rgba(0,136,255,0.6)]">
                 {String(count).padStart(2, '0')}%
               </div>
 
-              {/* High Tech Glowing Progress Bar Container */}
-              <div className="w-56 sm:w-80 h-1.5 bg-gray-900 rounded-full overflow-hidden p-0.5 border border-white/10 relative shadow-inner">
+              {/* Glowing Progress Bar */}
+              <div className="w-64 sm:w-96 h-2 bg-gray-900 rounded-full overflow-hidden p-0.5 border border-gray-800 relative shadow-inner">
                 <motion.div
-                  style={{ width: `${count}%` }}
-                  className="h-full bg-gradient-to-r from-[#0088ff] via-[#00a3ff] to-[#0077ff] rounded-full shadow-[0_0_16px_#0088ff]"
+                  initial={{ width: '0%' }}
+                  animate={{ width: `${count}%` }}
+                  transition={{ ease: 'easeOut', duration: 0.1 }}
+                  className="h-full bg-gradient-to-r from-[#0088ff] via-[#00a3ff] to-[#0077ff] rounded-full shadow-[0_0_20px_#0088ff]"
                 />
               </div>
 
-              <div className="font-mono text-[10px] text-gray-500 uppercase tracking-widest mt-1">
-                OPTIMIZING PLATFORM ASSETS
+              <div className="font-mono text-[10px] text-gray-400 uppercase tracking-widest mt-1">
+                LOADING DIGITAL ASSETS
               </div>
             </motion.div>
 
