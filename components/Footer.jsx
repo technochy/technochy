@@ -22,8 +22,7 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { label: 'Facebook', href: 'https://facebook.com' },
-    { label: 'Linkedin', href: 'https://linkedin.com' },
+    { label: 'Linkedin', href: 'https://linkedin.com/company/technochy' },
   ];
 
   return (

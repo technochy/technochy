@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="100%" height="100%">
+  <!-- Symbol -->
+  <g transform="translate(12, 8.25)">
+    <!-- Top Left (Red) -->
+    <rect x="0" y="0" width="11" height="11" fill="#f25022" />
+    <!-- Top Right (Green) -->
+    <rect x="12.5" y="0" width="11" height="11" fill="#7fba00" />
+    <!-- Bottom Left (Blue) -->
+    <rect x="0" y="12.5" width="11" height="11" fill="#00a4ef" />
+    <!-- Bottom Right (Yellow) -->
+    <rect x="12.5" y="12.5" width="11" height="11" fill="#ffb900" />
+  </g>
+  <!-- Text -->
+  <text x="44.5" y="26.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19.5" font-weight="600" fill="#737373" letter-spacing="-0.5px">Microsoft</text>
+</svg>
