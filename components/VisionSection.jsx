@@ -33,15 +33,15 @@ export default function VisionSection() {
               {/* Brand Blue Glow Screen Accent */}
               <div className="w-full h-full bg-[#0088ff] p-2 flex flex-col justify-between relative group-hover:bg-[#0077ff] transition-colors duration-300">
                 <div className="flex items-center justify-between">
-                  <span className="text-[9px] font-mono font-extrabold text-white uppercase tracking-wider">NOVA PAY</span>
+                  <span className="text-[9px] font-mono font-extrabold text-white uppercase tracking-wider">TECHNOCHY</span>
                   <div className="w-1.5 h-1.5 rounded-full bg-white animate-ping"></div>
                 </div>
                 <div className="text-center font-mono font-black text-white text-xs sm:text-sm tracking-tighter">
-                  3D ENGINE
+                  DEV CORE
                 </div>
                 <div className="text-[8px] font-mono font-bold text-white/80 flex justify-between">
-                  <span>SCALE</span>
-                  <span>99.9%</span>
+                  <span>UPTIME</span>
+                  <span>100%</span>
                 </div>
               </div>
             </motion.span>

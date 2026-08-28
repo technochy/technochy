@@ -34,7 +34,7 @@ export default function Home() {
       <ServicesGrid />
       <VisionSection />
       <WorkShowcase />
-      <ClientShowcaseSlider />
+      {/* <ClientShowcaseSlider /> */}
       <TestimonialsProcess />
       <FaqSection />
       <ContactSection />
